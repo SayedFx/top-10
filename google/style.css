@@ -15,6 +15,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: arial, sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .header {
@@ -23,13 +28,8 @@ body {
 }
 
 .header a {
-  font-family: arial, sans-serif;
   font-size: 1.4rem;
   color: #202124;
-}
-
-.header a:hover {
-  text-decoration: underline;
 }
 
 .header nav {
@@ -79,7 +79,7 @@ body {
 }
 
 main {
-  flex: 1 0 calc(100vh - 300px);
+  flex: 1 0 calc(100vh - 200px);
   background-color: yellow;
 }
 
@@ -88,6 +88,40 @@ main .glass {
 }
 
 footer {
-  flex: 0 0 200px;
-  background-color: blue;
+  flex: 0 0 100px;
+  background-color: #f2f2f2;
+  padding: 0 var(--horizontal-gap);
+}
+
+footer .upper,
+footer .lower {
+  height: 47.2px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  color: #70757a;
+}
+
+footer .lower {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer .left,
+footer .right {
+  display: flex;
+  gap: var(--horizontal-gap);
+}
+
+footer .center {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
 }
