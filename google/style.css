@@ -1,15 +1,93 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
+:root {
+  --horizontal-gap: 20px;
+}
 * {
   box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  flex: 0 0 100px;
+  padding: 30px 20px 0 20px;
+}
+
+.header a {
+  font-family: arial, sans-serif;
+  font-size: 1.4rem;
+  color: #202124;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+}
+
+.dots-container {
+  max-height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.dots-container:hover {
+  background-color: #eff0f0;
+}
+
+.sign-in-btn {
+  text-decoration: none;
+  background-color: #1a73e8;
+  padding: 10px 30px;
+  border-radius: 6px;
+  color: #fff !important;
+  font-size: 1.2rem !important;
+}
+
+.sign-in-btn:hover {
+  background-color: #2b7de9;
+  text-decoration: none !important;
+}
+
+.header .dots {
+  max-width: 40px;
+  fill: #5f6368;
+}
+
+.header .left {
+  display: flex;
+  gap: var(--horizontal-gap);
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+  gap: var(--horizontal-gap);
+}
+
+main {
+  flex: 1 0 calc(100vh - 300px);
+  background-color: yellow;
+}
+
+main .glass {
+  max-width: 16px;
+}
+
+footer {
+  flex: 0 0 200px;
+  background-color: blue;
 }
