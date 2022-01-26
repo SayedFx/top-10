@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: arial, sans-serif;
+  min-width: 400px;
 }
 
 a:hover {
@@ -37,11 +38,12 @@ button:hover {
 
 .header {
   flex: 0 0 100px;
-  padding: 30px 20px 0 20px;
+  padding: 20px var(--horizontal-gap) 0 var(--horizontal-gap);
+  z-index: 2000;
 }
 
 .header a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #202124;
 }
 
@@ -67,7 +69,6 @@ button:hover {
   padding: 10px 30px;
   border-radius: 6px;
   color: #fff !important;
-  font-size: 1.2rem !important;
 }
 
 .sign-in-btn:hover {
@@ -92,10 +93,12 @@ button:hover {
 }
 
 main {
+  margin-top: -200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1 0 calc(100vh - 200px);
+  flex: 1 0 100%;
+  padding: 0 var(--horizontal-gap);
 }
 
 main .container {
@@ -225,6 +228,25 @@ main .logo .green {
   color: #80868b;
 }
 
+.lucky {
+  position: relative;
+  min-width: 244px;
+  overflow: hidden;
+}
+
+.lucky-items {
+  position: absolute;
+  top: 0;
+  transition: top 0.3s linear;
+}
+
+.lucky-item {
+  padding: 10px;
+}
+
+.lucky-item-hidden {
+  visibility: hidden;
+}
 footer {
   flex: 0 0 100px;
   background-color: #f2f2f2;
@@ -262,4 +284,28 @@ footer .center {
   display: flex;
   gap: 10px;
   align-items: flex-end;
+}
+
+@media (max-width: 1200px) {
+  footer .lower {
+    height: 94.4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  footer .center {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .header a {
+    font-size: 0.9rem;
+  }
+  :root {
+    --horizontal-gap: 10px;
+  }
 }
