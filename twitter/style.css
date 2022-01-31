@@ -49,6 +49,7 @@ a {
 }
 
 body {
+  background-color: #000;
   margin: 0;
   padding: 0;
   background-color: #000;
@@ -112,4 +113,146 @@ footer {
 
 a.footer-item:hover {
   text-decoration: underline;
+}
+
+.container .right {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.container .right .twitter-svg {
+  width: 45px;
+  height: 57px;
+  fill: rgb(217, 217, 217);
+}
+
+.container .right .logo svg {
+  fill: rgb(217, 217, 217);
+  width: 45px;
+  height: 57px;
+}
+
+.container .headings {
+  display: flex;
+  flex-direction: column;
+  color: rgb(217, 217, 217);
+  font-family: TwitterChirpExtendedHeavy;
+}
+
+.container .headings .heading-big {
+  font-size: 32px;
+}
+
+.container .headings .heading-small {
+  font-size: 25px;
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 298px;
+}
+
+.container button {
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  height: 38px;
+  cursor: pointer;
+}
+
+.container .buttons .google-btn:hover {
+  background-color: #e9e9ed;
+}
+
+.container .buttons .google-btn span {
+  font-family: "Google Sans", arial, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.container .buttons .google-svg {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px -4px 0;
+}
+
+.container .buttons .apple-btn {
+  transition-delay: 0.1s;
+}
+
+.container .buttons .apple-svg {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px -4px 0;
+}
+
+.container .buttons .blue-btn {
+  color: #fff;
+  background-color: #1d9bf0;
+  font-weight: 600;
+}
+
+.container .buttons .blue-btn:hover {
+  background-color: #1b92e2;
+}
+
+.container .buttons .lines {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .buttons .lines .right-line {
+  height: 1px;
+  width: 149px;
+  background-color: #2f3336;
+}
+
+.container .buttons .lines .left-line {
+  height: 1px;
+  width: 149px;
+  background-color: #2f3336;
+}
+
+.container .buttons .lines span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.container .buttons .buttons-info {
+  color: #2f3336;
+  font-size: 11px;
+  width: 400px;
+}
+
+.container .buttons .buttons-info a {
+  display: inline;
+  color: #1b92e2;
+}
+
+.container .buttons .buttons-info a:hover {
+  text-decoration: underline;
+}
+
+.container .account {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .account h3 {
+  color: rgb(217, 217, 217);
+  font-family: TwitterChirp;
+}
+
+.container .account .sign-in-btn {
+  width: 298px;
+  color: #1b92e2;
+  background-color: black;
+  border: 1px solid #536471;
 }
