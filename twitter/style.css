@@ -51,4 +51,65 @@ a {
 body {
   margin: 0;
   padding: 0;
+  background-color: #000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 80%;
+  display: flex;
+}
+
+main > * {
+  flex-basis: 50%;
+}
+
+.left {
+  display: grid;
+  align-items: center;
+}
+
+.left img {
+  grid-area: 1/1/2/2;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.left svg {
+  margin: auto;
+  grid-area: 1/1/2/2;
+  fill: #fff;
+  max-height: 380px;
+  height: 50%;
+  max-width: 100%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+
+.footer-item {
+  color: #63767d;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+a.footer-item:hover {
+  text-decoration: underline;
 }
