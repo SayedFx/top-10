@@ -181,6 +181,12 @@ a.footer-item:hover {
 
 .container .buttons .apple-btn {
   transition-delay: 0.1s;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #0f1419;
+  font-weight: 700;
 }
 
 .container .buttons .apple-svg {
@@ -191,8 +197,12 @@ a.footer-item:hover {
 
 .container .buttons .blue-btn {
   color: #fff;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
   background-color: #1d9bf0;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .container .buttons .blue-btn:hover {
@@ -226,9 +236,13 @@ a.footer-item:hover {
 }
 
 .container .buttons .buttons-info {
-  color: #2f3336;
+  color: #6e767d;
   font-size: 11px;
+  line-height: 12px;
+  font-weight: 400;
   width: 400px;
+  font-family: "TwitterChirp", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
 }
 
 .container .buttons .buttons-info a {
@@ -252,7 +266,21 @@ a.footer-item:hover {
 
 .container .account .sign-in-btn {
   width: 298px;
-  color: #1b92e2;
+  color: #1d9bf0;
   background-color: black;
   border: 1px solid #536471;
+}
+
+.container .account .sign-in-btn:hover {
+  background-color: rgba(29, 155, 240, 0.2);
+}
+
+@media (max-width: 1000px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .right {
+    margin: auto;
+  }
 }
