@@ -145,6 +145,13 @@ a.card-item:hover {
   text-decoration: underline;
 }
 
+.right hr {
+  width: 100%;
+  background-color: #dadde1;
+  border: none;
+  height: 1px;
+}
+
 @media (max-width: 1060px) {
   main {
     flex-direction: column;
