@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1c1e21;
+}
+
+.container {
+  max-width: 980px;
+}
