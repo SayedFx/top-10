@@ -164,3 +164,78 @@ a.card-item:hover {
     text-align: center;
   }
 }
+
+a {
+  text-decoration: none;
+  color: #8a8d91;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 158px;
+  width: 100%;
+  padding: 20px;
+}
+
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 980px;
+}
+
+footer .upper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+footer .upper .line {
+  border-bottom: 1px solid #dddfe2;
+  width: 980px;
+}
+
+footer .upper span {
+  color: #737373;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .upper .plus-btn {
+  background-color: #f5f6f7;
+  background-image: url("plus.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #ccd0d5;
+  border-radius: 2px;
+  outline: none;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+footer .upper .plus-btn:hover {
+  background-color: #e9e9ed;
+  transition: 0.5s ease-in-out;
+}
+
+footer .middle {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+footer .lower {
+  margin-top: 10px;
+}
+
+footer .lower span {
+  color: #8a8d91;
+}
