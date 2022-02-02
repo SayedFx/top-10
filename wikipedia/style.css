@@ -26,3 +26,136 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+hr {
+  border: none;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom hr {
+  width: 1328px;
+  border-bottom: 1px solid #c8ccd1;
+}
+
+.bottom .bottom-section {
+  display: flex;
+  gap: 50px;
+  flex: 1 1 100%;
+  padding: 4.16rem 1.28rem 1.28rem;
+}
+
+.bottom .bottom-section .left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1 1 30%;
+  gap: 30px;
+  padding-left: 6rem;
+  padding-right: 2rem;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--gray);
+}
+
+.bottom .upper {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bottom .upper .logo-black {
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+  background-image: url("images/black-logo.svg");
+  width: 42px;
+  height: 42px;
+}
+
+.bottom .lower {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.bottom .lower .wikipedia-logo {
+  position: absolute;
+  top: 0;
+  left: -3.5rem;
+  background-image: url("images/wikipedia-logo.svg");
+  width: 42px;
+  height: 42px;
+}
+
+.bottom .lower .black-buttons {
+  margin-top: 10px;
+}
+
+.bottom a {
+  color: var(--blue);
+}
+
+.bottom .bottom-section .right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 1 1 70%;
+}
+
+.bottom .right a {
+  font-size: 14px;
+}
+
+.bottom .right .link {
+  position: relative;
+}
+
+.bottom .right .link .logo {
+  position: absolute;
+  top: 0;
+  left: -3.5rem;
+  width: 50px;
+  height: 47px;
+}
+
+.bottom .right p {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+.bottom .bottom-section .right .link {
+  margin-left: 50px;
+  flex: 1 1 calc(70% / 3);
+}
+
+footer hr {
+  width: 1328px;
+  border-bottom: 1px solid #c8ccd1;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+footer p {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+footer a {
+  color: var(--blue);
+}
