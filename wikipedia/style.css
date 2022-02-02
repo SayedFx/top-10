@@ -18,11 +18,150 @@ body {
   min-height: 100vh;
 }
 
-a {
+a,
+a:active,
+a:focus {
   text-decoration: none;
   font-family: inherit;
+  unicode-bidi: embed;
+  outline: none;
+  color: #36c;
+  touch-action: manipulation;
+  background-color: transparent;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+.lang-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  position: relative;
+  margin: rem auto 0.5rem;
+  width: 270px;
+  font-family: "Linux Libertine", "Hoefler Text", Georgia, "Times New Roman",
+    Times, serif;
+  font-weight: 400;
+  font-feature-settings: "ss05";
+}
+
+.logo img {
+  position: absolute;
+  top: 158px;
+  left: 35px;
+}
+
+.logo h1 {
+  margin: 1.2rem 0;
+  text-align: center;
+}
+
+.logo strong {
+  display: block;
+  font-size: 15px;
+  line-height: 33px;
+  font-weight: 400;
+}
+
+.logo h1 span {
+  color: transparent;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -10000px;
+  background-image: linear-gradient(transparent, transparent),
+    url("images/wikipedia.svg");
+  width: 176px;
+  height: 32px;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+.langs {
+  position: relative;
+  height: 325px;
+  width: 546px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.langs .central-featured-lang {
+  position: absolute;
+  width: 15.6rem;
+}
+
+.langs .central-featured-lang:nth-of-type(1) {
+  top: 0;
+  right: 60%;
+}
+
+.langs .central-featured-lang:nth-of-type(2) {
+  top: 0;
+  left: 60%;
+}
+
+.langs .central-featured-lang:nth-of-type(3) {
+  top: 20%;
+  right: 70%;
+}
+
+.langs .central-featured-lang:nth-of-type(4) {
+  top: 20%;
+  left: 70%;
+}
+
+.langs .central-featured-lang:nth-of-type(5) {
+  top: 40%;
+  right: 72%;
+}
+
+.langs .central-featured-lang:nth-of-type(6) {
+  top: 40%;
+  left: 72%;
+}
+
+.langs .central-featured-lang:nth-of-type(7) {
+  top: 60%;
+  right: 70%;
+}
+
+.langs .central-featured-lang:nth-of-type(8) {
+  top: 60%;
+  left: 70%;
+}
+
+.langs .central-featured-lang:nth-of-type(9) {
+  top: 80%;
+  right: 60%;
+}
+
+.langs .central-featured-lang:nth-of-type(10) {
+  top: 80%;
+  left: 60%;
+}
+
+.langs .central-featured-lang a {
+  display: block;
+  padding: 0;
+  white-space: normal;
+}
+
+.langs .central-featured-lang strong {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.langs .central-featured-lang small {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--gray);
+  cursor: default;
 }
