@@ -34,6 +34,20 @@ a:hover {
   text-decoration: underline;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+section.top {
+  width: 100%;
+}
+
 .lang-area {
   display: flex;
   flex-direction: column;
@@ -164,4 +178,330 @@ a:hover {
   line-height: 21px;
   color: var(--gray);
   cursor: default;
+}
+
+.search-container {
+  float: none;
+  max-width: 95%;
+  width: 540px;
+  margin: 0.4rem auto 1.95rem;
+  text-align: center;
+}
+
+.search-container fieldset {
+  word-spacing: -4px;
+  margin: 0;
+  padding: 0.56rem 0 1.2rem;
+  border: 0;
+}
+
+.search-container .search-input {
+  display: inline-block;
+  position: relative;
+  width: 73%;
+  vertical-align: top;
+}
+
+.screen-reader-text {
+  display: block;
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#searchInput {
+  width: 100%;
+  height: 44px;
+  border-width: 1px 0 1px 1px;
+  border-radius: 2px 0 0 2px;
+  padding: 8px 96px 8px 12px;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background 0.1s ease, border-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.pure-form input[type="search"] {
+  background-color: #fff;
+  display: inline-block;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  padding: 0.8rem;
+  box-shadow: inset 0 0 0 1px #fff;
+  vertical-align: middle;
+}
+
+.styled-select {
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 12px;
+  right: 12px;
+  max-width: 95px;
+  height: 24px;
+  border-radius: 2px;
+}
+
+.styled-select .hide-arrow {
+  padding: 0 2.4rem 0 0.8rem;
+  right: 32px;
+  max-width: 68px;
+  height: 24px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.search-container .js-langpicker-label {
+  display: inline-block;
+  margin: 0;
+  color: #54595d;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.styled-select select {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 110px;
+  min-width: 110px;
+  max-width: 110px;
+
+  z-index: 1;
+  border: 0;
+  margin: 0;
+  padding: 0 2.4rem;
+
+  display: inline;
+  overflow: hidden;
+
+  outline: 0;
+  line-height: 24px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  opacity: 0;
+  appearance: none;
+  cursor: pointer;
+  color: transparent;
+}
+
+.styled-select select option {
+  color: #54595d;
+}
+
+.search-container .svg-arrow-down {
+  position: absolute;
+  top: 8px;
+  right: 6px;
+}
+
+.svg-arrow-down {
+  width: 12px;
+  height: 8px;
+  background-image: url(images/arrow-down.svg);
+  display: inline-block;
+}
+.pure-button {
+  display: inline-block;
+  position: relative;
+  white-space: nowrap;
+  line-height: normal;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+
+  background-color: #36c;
+  border-color: #36c;
+  color: #fff;
+  min-height: 44px;
+  min-width: 16px;
+  border: 1px solid #a2a9b1;
+  font-family: inherit;
+  font-weight: 700;
+  vertical-align: top;
+  margin: 0;
+  border-radius: 0 2px 2px 0;
+  padding: 8px 16px;
+  font-size: 16px;
+  z-index: 2;
+  border: 0;
+  transition: background 0.1s ease, color 0.1s ease, border-color 0.1s ease,
+    box-shadow 0.1s ease, -webkit-box-shadow 0.1s ease,
+    -moz-box-shadow 0.1s ease;
+  overflow: visible;
+}
+
+.svg-search-icon {
+  background-image: url("images/search-icon.svg");
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  text-indent: -9999px;
+  width: 22px;
+  height: 22px;
+}
+.pure-button-primary-progressive:hover {
+  background: #447ff5;
+  color: #404244;
+  border-color: #447ff5;
+}
+.central-featured-lang :hover {
+  background-color: #eaecf0;
+}
+
+.svg-arrow-down-blue {
+  background-image: url("images/arrow-down-blue.svg");
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out,
+    -moz-transform 0.2s ease-out;
+}
+.svg-arrow-down-blue.active {
+  transform: rotate(180deg);
+}
+.svg-language-icon {
+  background-image: url("images/lang-instruction.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.lang-list-button-wrapper {
+  text-align: center;
+}
+
+.lang-list-button i {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+.lang-list-button {
+  background-color: #f8f9fa;
+  display: inline;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 6px 12px;
+  outline: 16px solid #fff;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  color: #36c;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  transition: outline-width 0.1s ease-in 0.5s;
+  cursor: pointer;
+}
+
+.lang-list-button.active {
+  background-color: #fff;
+  outline: 1px solid #fff;
+  border-color: #72777d;
+  transition-delay: 0s;
+}
+
+.lang-list-button:hover {
+  background-color: #fff;
+  border-color: #a2a9b1;
+}
+
+.lang-list-button-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  padding: 0 6.4px;
+  vertical-align: middle;
+}
+
+.lang-list-border {
+  background-color: #c8ccd1;
+  display: block;
+  position: relative;
+  max-width: 460px;
+  width: 80%;
+  margin: -16px auto 16px;
+  height: 1px;
+  transition: max-width 0.2s ease-out 0.4s;
+}
+
+.lang-list-border.active {
+  max-width: 85%;
+  transition-delay: 0s;
+}
+.lang-list-container {
+  visibility: hidden;
+  background-color: #f8f9fa;
+  overflow: hidden;
+  position: relative;
+  max-height: 0;
+  width: 80%;
+  margin: -16px auto 48px;
+  transition: max-height 0.5s ease-out 0.16s, visibility 0.5s ease-in 1s;
+}
+
+.lang-list-container.active {
+  visibility: visible;
+  max-height: 10000px;
+  transition: max-height 1s ease-in 0.2s, visibility 1000s ease-in 0ms;
+}
+
+.lang-list-content {
+  position: relative;
+  width: 100%;
+  padding: 16px 16px 0;
+}
+
+.bookshelf-container {
+  display: block;
+  overflow: visible;
+  width: 100%;
+  height: 1px;
+  margin: 2.4rem 0 1.6rem;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bookshelf {
+  display: block;
+  border-top: 1px solid #c8ccd1;
+  box-shadow: 0 -1px 0 #fff;
+  text-align: center;
+  white-space: nowrap;
+}
+.bookshelf .text {
+  background-color: #f8f9fa;
+  position: relative;
+  top: -11.2px;
+  font-weight: 400;
+  padding: 0 8px;
+}
+
+.langlist {
+  width: auto;
+  margin: 16px 0;
+  text-align: left;
+}
+
+.langlist > ul {
+  column-width: 112px;
+}
+
+.hlist ul {
+  margin: 0;
+  padding: 0;
+}
+
+.langlist > ul > li {
+  display: block;
+  line-height: 1.7;
+  page-break-inside: avoid;
+  break-inside: avoid;
 }
