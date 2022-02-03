@@ -18,3 +18,21 @@ body {
   max-width: 935px;
   width: 100%;
 }
+
+.slide .images {
+  position: relative;
+  width: 454px;
+  height: 618px;
+}
+
+.slide .images .image {
+  position: absolute;
+  top: 99px;
+  left: 151px;
+  transition: opacity 1.5s ease-in;
+  opacity: 0;
+}
+
+.slide .images .image.visible {
+  opacity: 1;
+}
