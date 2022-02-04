@@ -89,3 +89,19 @@ section.three .circle img {
   width: 100%;
   height: 100%;
 }
+
+section.four {
+  padding: 40px 30px 60px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.four button {
+  background-color: #fff;
+  border: 2px solid #77d7c8;
+  border-radius: 40px;
+  padding: 16px 32px;
+  color: #128c7e;
+  cursor: pointer;
+}
