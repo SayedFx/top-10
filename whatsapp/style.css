@@ -85,32 +85,7 @@ section.three h2 {
   font-weight: 700;
 }
 
-section.three .circle .item {
-  position: relative;
-  transform: translateY(110px);
-  height: 66.2px;
-}
-
-section.three .circle .item.flipped svg {
-  transform: rotateY(180deg);
-}
-
-section.three .circle .item .text {
-  position: absolute;
-  top: 0;
-  left: 0;
+section.three .circle img {
   width: 100%;
   height: 100%;
-
-  color: rgba(52, 68, 76);
-  font-family: Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 39px;
-  white-space: nowrap;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
