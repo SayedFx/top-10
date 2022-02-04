@@ -1,14 +1,14 @@
-const bubble = document.querySelector(
-  "section.three .circle .item .replacement"
-);
-const os = bubble.innerHTML.split("");
+const hamburgerButton = document.querySelector(".hamburger-button");
+const nav = document.querySelector(".nav");
+const crossBtn = document.querySelector(".cross-btn");
 
-os.forEach((o, index) => {
-  const delay = 200 * (index + 1);
-  setTimeout(() => {
-    os[index] = "X";
-    bubble.innerText = os.join("");
-  }, delay);
+hamburgerButton.addEventListener("click", () => {
+  nav.classList.remove("visible");
 });
 
-const strings = ["øx3©ππ", "3x3©ππ", "ß©‡πø%", "HøøπIß"];
+crossBtn.addEventListener("click", () => {
+  nav.classList.add("visible");
+});
+
+
+
