@@ -16,6 +16,8 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .desktop-nav {
@@ -262,13 +264,14 @@ body {
   font-weight: 400;
   color: #1c1e21;
   text-align: center;
-  padding: 60px var(--padding-sides) 0;
+  padding: 60px var(--padding-sides);
 }
 .two {
   background-color: #d8e8ea;
   overflow: hidden;
   position: relative;
   z-index: 2;
+  padding-bottom: 0;
 }
 .two h1 {
   margin-top: 0;
@@ -474,7 +477,7 @@ body {
   .six {
     flex-direction: row;
     justify-content: space-between;
-    padding: 40px;
+    padding: 40px var(--padding-sides);
   }
 }
 
@@ -542,5 +545,35 @@ body {
     width: 160px;
     height: 39px;
     background-image: url("images/whatsapp-logo-with-name.svg");
+  }
+
+  .five {
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --padding-sides: 200px;
+  }
+  .one .container {
+    width: 100%;
+  }
+  .one .content {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .two-plus-three {
+    padding: 0 var(--padding-sides);
+  }
+  .two .phone-image {
+    position: relative;
+    top: 100px;
+  }
+
+  .five {
+    justify-content: space-between;
+    padding: 30px var(--padding-sides);
   }
 }
