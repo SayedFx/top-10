@@ -150,3 +150,92 @@ main .logo img {
   text-decoration: underline;
   color: #315efb;
 }
+
+.hot-search-wrapper {
+  width: 100%;
+}
+.hot-search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hot-search a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #222;
+}
+
+.hot-search a:nth-of-type(2) {
+  color: #626675;
+}
+
+.hot-search a:hover {
+  text-decoration: underline;
+  color: #315efb;
+}
+
+.hot-search-wrapper .content {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  columns: 2;
+}
+.hot-search-wrapper .content li {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.hot-search-wrapper .content a {
+  text-decoration: none;
+  color: #222;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hot-search-wrapper .content a .text:hover {
+  text-decoration: underline;
+  color: #315efb;
+}
+
+.hot-search-wrapper .content .num1 {
+  color: #fe2d46;
+  font-size: 1.4rem;
+}
+
+.hot-search-wrapper .content .num2 {
+  color: #f60;
+  font-size: 1.4rem;
+}
+
+.hot-search-wrapper .content .num3 {
+  color: #faa90e;
+  font-size: 1.4rem;
+}
+
+.hot-search-wrapper .content .num {
+  color: #9195a3;
+  font-size: 1.4rem;
+}
+
+.hot-search-wrapper .content .orange {
+  background-color: #f60;
+  color: #fff;
+  border-radius: 4px;
+  vertical-align: middle;
+  padding: 4px;
+  font-size: 0.8rem;
+}
+
+.hot-search-wrapper .content .red {
+  background-color: #de1544;
+  color: #fff;
+  border-radius: 4px;
+  vertical-align: middle;
+  padding: 4px;
+  font-size: 0.8rem;
+}
