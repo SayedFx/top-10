@@ -20,6 +20,12 @@ main {
   justify-content: center;
   align-items: center;
   width: 654px;
+  gap: 30px;
+}
+
+main > * {
+  margin: 0;
+  padding: 0;
 }
 
 .popup-container {
@@ -116,4 +122,31 @@ main .logo img {
 }
 .search-form .submit:hover {
   background-color: #4662d9;
+}
+
+.under-search-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.under-search-box img {
+  height: 18px;
+  width: 18px;
+}
+
+.under-search-box a {
+  vertical-align: top;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #53a1fc;
+}
+
+.under-search-box a:hover {
+  text-decoration: underline;
+  color: #315efb;
 }
