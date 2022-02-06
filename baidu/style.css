@@ -13,3 +13,20 @@ body {
   height: 100vh;
   overflow: hidden;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 654px;
+}
+
+main .logo {
+  width: 270px;
+  height: 129px;
+}
+
+main .logo img {
+  width: 100%;
+}
