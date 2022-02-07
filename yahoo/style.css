@@ -106,12 +106,73 @@ nav .upper .right {
   background-blend-mode: overlay;
 }
 
-.bell-icon .notifications-container {
+.bell-icon .popup {
   display: none;
   position: absolute;
-  top: 30px;
+  width: 370px;
+  height: 269px;
+  top: 40px;
   right: -10px;
   padding-top: 24px;
+  background-color: #fff;
+  overflow-y: auto;
+  border-radius: 4px;
+  border: 1px solid #d8dade;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0/36%);
+}
+
+/*.bell-icon .square {*/
+/*position: absolute;*/
+/*top: 44px;*/
+/*right: -10px;*/
+/*width: 50px;*/
+/*height: 50px;*/
+/*background-color: #fff;*/
+/*transform: rotate(45deg);*/
+/*border: 1px solid #d8dade;*/
+/*box-shadow: 0 2px 8px 0 rgb(0 0 0/36%);*/
+/*}*/
+
+.bell-icon .popup .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 10px;
+}
+
+.bell-icon .popup .item:hover {
+  background-color: #c2deff;
+}
+
+.bell-icon .popup .heading {
+  padding: 5px 10px;
+  color: #26282a;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.bell-icon .popup .item .round-image {
+  width: 40px;
+  height: 40px;
+}
+
+.bell-icon .popup .item .image {
+  width: 40px;
+  height: 40px;
+}
+
+.bell-icon .popup .item .info {
+  line-height: 1.5;
+  font-size: 14px;
+  color: #26282a;
+}
+
+.bell-icon .popup .item span {
+  line-height: 1.67;
+  color: #979ba7;
+  font-size: 12px;
 }
 
 .bell-icon .notification {
@@ -129,6 +190,11 @@ nav .upper .mail {
   gap: 10px;
   cursor: pointer;
 }
+
+nav .upper .mail:hover {
+  opacity: 0.4;
+}
+
 .mail-icon {
   background-image: url(images/bell-sprite.png);
   background-position-y: -1404px;
@@ -175,10 +241,81 @@ main .right {
   position: sticky;
   top: 0px;
 }
+
+main .right .trending .heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+main .right .items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main .right .left-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+main .right .left-items .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+main .right .left-items .item span {
+  color: var(--accent);
+}
+
+main .right .left-items .item:hover {
+  color: var(--accent);
+}
+
+main .right .right-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+main .right .right-items .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+main .right .right-items .item span {
+  color: var(--accent);
+}
+
+main .right .right-items .item:hover {
+  color: var(--accent);
+}
+
+main .right .left-items .item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
 .padded-sides {
   padding: 0 350px;
 }
 
 .visible {
   display: block !important;
+}
+
+@media (max-width: 1366px) {
+  .padded-sides {
+    padding: 0 50px;
+  }
 }
