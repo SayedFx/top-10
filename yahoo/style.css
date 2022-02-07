@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
+:root {
+  --accent: #6001d2;
+}
 * {
   box-sizing: border-box;
 }
@@ -8,8 +11,164 @@ body {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: #232a31;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+}
+body > div {
+  margin-top: 100px;
+}
+
+nav .upper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  padding: 20px 0;
+}
+
+nav .upper .left {
+  display: flex;
+  gap: 40px;
+}
+
+.search-bar {
+  display: flex;
+  border: 1px solid #188fff;
+  height: 44px;
   overflow: hidden;
+  border-radius: 4px;
+}
+.search-bar input {
+  height: 44px;
+  border: none;
+  width: 600px;
+}
+.search-button {
+  background-image: url(images/search-icon-sprite.png);
+  width: 96px;
+  height: 44px;
+  padding: 1px 0 1px 4px;
+  background-position: center 13px;
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-color: #188fff;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+nav .upper .right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.sign-in {
+  background-color: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+  width: 80px;
+  height: 27px;
+  font-size: 12px;
+  line-height: 18.2px;
+  white-space: nowrap;
+  color: var(--accent);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.bell-icon {
+  width: 32px;
+  height: 32px;
+  background-image: url(images/bell-sprite.png);
+  background-position-y: -1667px;
+  position: relative;
+  cursor: pointer;
+}
+
+.bell-icon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
+}
+
+.bell-icon .notifications-container {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  padding-top: 24px;
+}
+
+.bell-icon .notification {
+  color: red;
+  position: absolute;
+  right: 0;
+  top: -10px;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+nav .upper .mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.mail-icon {
+  background-image: url(images/bell-sprite.png);
+  background-position-y: -1404px;
+  width: 23px;
+  height: 25px;
+}
+
+nav .lower {
+  background-color: #fff;
+  transition: max-height 0.5s ease-in;
+  max-height: 59px;
+  display: flex;
+  gap: 25px;
+  padding: 20px 0;
+  overflow: hidden;
+}
+nav .lower.roll-up {
+  max-height: 0;
+  padding: 0;
+  transition: max-height 0.5s ease-out;
+}
+nav.roll-up {
+  box-shadow: rgb(0 0 0/40%) 0 0 10px 0;
+}
+
+nav .lower .mail span {
+  vertical-align: center;
+}
+nav .lower .mail svg {
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+  vertical-align: center;
+}
+.padded-sides {
+  padding: 0 350px;
+}
+
+.visible {
+  display: block !important;
 }
