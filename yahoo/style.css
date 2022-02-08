@@ -202,6 +202,49 @@ nav .upper .mail:hover {
   height: 25px;
 }
 
+.mail-icon.popup-container {
+  position: relative;
+}
+
+.mail-icon.popup-container .popup {
+  position: absolute;
+  top: 48px;
+  right: -44px;
+  width: 300px;
+  height: 61px;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #d8dade;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0/36%);
+  pointer-events: none;
+  display: none;
+}
+
+.mail-icon.popup-container .popup .popup-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 300px;
+  height: 61px;
+}
+
+.mail-icon.popup-container .popup .popup-item a {
+  color: #0078ff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19px;
+}
+
+.mail-icon.popup-container .popup .popup-item a:hover {
+  text-decoration: underline;
+}
+
+.mail-icon.popup-container .popup .popup-item span {
+  font-size: 13px;
+  line-height: 19px;
+}
+
 nav .lower {
   background-color: #fff;
   transition: max-height 0.5s ease-in;
@@ -237,6 +280,9 @@ main {
   width: 100%;
 }
 main .right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   height: calc(100vh);
   position: sticky;
   top: 0px;
@@ -306,16 +352,343 @@ main .right .left-items .item {
   cursor: pointer;
 }
 
+main .right .weather .headings {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #232a31;
+}
+
+main .right .weather .headings .heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+main .right .weather .location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+main .right .weather .headings .country {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+main .right .weather .headings .country:hover {
+  color: var(--accent);
+}
+
+main .right .weather .weather-items {
+  display: flex;
+  gap: 50px;
+}
+
+main .right .weather .weather-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+main .right .weather .weather-item .title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #1d2228;
+}
+
+main .right .weather .weather-item .weather-image {
+  background-image: url("images/windy_day_night.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+main .right .weather .weather-item .weather-image-second {
+  background-image: url("images/scattered_showers_day_night.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+main .right .weather .weather-item .weather-image-third {
+  background-image: url("images/partly_cloudy_day.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+main .right .weather .weather-item .temperature {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+main .right .weather .weather-item .temperature .morning-temp {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #1d2228;
+}
+
+main .right .weather .weather-item .temperature .night-temp {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #6e7780;
+}
+
+main .right .weather a {
+  color: #0f69ff;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+main .right .weather a:hover {
+  color: var(--accent);
+}
+
+main .right .scoreboard .scoreboard-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main .right .scoreboard a {
+  color: #0f69ff;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+main .right .scoreboard a:hover {
+  color: var(--accent);
+}
+
+main .right .scoreboard .scoreboard-item {
+  position: relative;
+  padding: 0 5px;
+}
+
+main .right .scoreboard .scoreboard-item:hover {
+  background-color: #f0f3f5;
+}
+
+main .right .scoreboard .first-titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .right .scoreboard .first-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+main .right .scoreboard .second-title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+main .right .scoreboard .titles {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6e7780;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+main .right .scoreboard .titles .middle {
+  color: var(--accent);
+  border-bottom: 4px solid var(--accent);
+}
+
+main .right .scoreboard .football-text-first {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .right .scoreboard .football-text-first p {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+main .right .scoreboard .time {
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  top: 31px;
+  right: 0;
+}
+
+main .right .scoreboard .football-text-second {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .right .scoreboard .football-text-second p {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+main .right .scoreboard .scoreboard-image {
+  width: 24px;
+  height: 24px;
+}
+
+main .right .featured-picks .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+}
+
+main .right .featured-picks .title:hover {
+  color: #6001d2;
+}
+
+main .right .featured-picks .info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .right .featured-picks .text h4 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #2f0060;
+}
+
+main .right .featured-picks .text h4:hover {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+main .right .featured-picks .text span {
+  font-size: 12px;
+  line-height: 16px;
+  color: #6e7780;
+}
+
+main .right .featured-picks img {
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+}
+
+main .right .horoscope .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .right .horoscope .title {
+  line-height: 17px;
+}
+
+main .right .horoscope .info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+main .right .horoscope .info svg {
+  width: 80px;
+  height: 80px;
+}
+
+main .right .horoscope .info span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+main .right .horoscope .info h4 {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+main .right .horoscope a {
+  color: #0f69ff;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+main .right .horoscope a:hover {
+  color: var(--accent);
+}
+
+main .right .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+main .right .footer .social-media-icons {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+
+main .right .footer .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main .right .footer .links .link {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #6e7780;
+  margin-left: 10px;
+}
+
+main .right .footer .links a {
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #6e7780;
+}
+
+main .right .footer .links .link:hover {
+  color: #0078ff;
+}
+
 .padded-sides {
   padding: 0 350px;
 }
 
 .visible {
   display: block !important;
-}
-
-@media (max-width: 1366px) {
-  .padded-sides {
-    padding: 0 50px;
-  }
 }
