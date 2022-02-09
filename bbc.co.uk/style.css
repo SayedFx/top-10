@@ -22,6 +22,83 @@ a {
   color: inherit;
 }
 
+nav {
+  border-bottom: 4px solid transparent;
+}
+
+nav.centered-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: 1px solid #bababa;
+}
+
+nav .items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+nav .items .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #bababa;
+  border-bottom: 3px solid transparent;
+  flex: 1 0 auto;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 31px;
+  height: 54px;
+  color: #3f3f42;
+}
+
+nav .items .item.blue:hover {
+  border-bottom: 3px solid #007bc7;
+}
+
+nav .items .item.red:hover {
+  border-bottom: 3px solid #bb1919;
+}
+
+nav .items .item.yellow:hover {
+  border-bottom: 3px solid #ffd230;
+}
+
+nav .items .item.light-blue:hover {
+  border-bottom: 3px solid #88ccee;
+}
+
+nav .items .item.purple:hover {
+  border-bottom: 3px solid #ed3d7d;
+}
+
+nav .items .item.orange:hover {
+  border-bottom: 3px solid #ff4900;
+}
+
+nav .items .item.green:hover {
+  border-bottom: 3px solid #90d200;
+}
+
+nav .items .item.dark-blue:hover {
+  border-bottom: 3px solid #3f3f42;
+}
+
+nav .items .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+nav .items .small {
+  fill: #3f3f42;
+}
+
 .centered-parent {
   width: 100%;
   display: flex;
@@ -30,6 +107,7 @@ a {
 
 .centered {
   max-width: 80rem;
+  width: 100%;
 }
 
 .live {
