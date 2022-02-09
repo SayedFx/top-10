@@ -28,6 +28,7 @@ nav {
 
 nav.centered-parent {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #ffffff;
@@ -99,6 +100,10 @@ nav .items .small {
   fill: #3f3f42;
 }
 
+.heading.centered-parent {
+  background-color: #fff;
+}
+
 .centered-parent {
   width: 100%;
   display: flex;
@@ -151,15 +156,30 @@ nav .items .small {
   }
 }
 
+.row {
+  display: flex;
+  gap: 20px;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   gap: 20px;
   background-color: #fff;
-  padding-bottom: 20px;
   width: 616px;
+  padding-bottom: 20px;
+  margin-top: 15px;
   --card-hover-color: #696969;
   --card-hover-text-decoration: none;
+}
+
+.card.second {
+  width: 308px;
+}
+
+.card.second .heading {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .card .image {
@@ -176,6 +196,25 @@ nav .items .small {
 .card .category {
   padding-left: 10px;
   font-size: 14px;
+}
+
+.card .bottom-text {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card .bottom-text svg {
+  fill: #696969;
+}
+
+.middle {
+  display: flex;
+  gap: 20px;
+}
+
+.middle .card {
+  width: 405px;
 }
 
 .card:hover {
