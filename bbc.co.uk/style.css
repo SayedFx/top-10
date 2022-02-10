@@ -287,3 +287,164 @@ section.sport {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+section.hang-up {
+  position: relative;
+  background-image: url(images/bin-phone-bg.jpg);
+  background-color: #010101;
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+}
+
+section.hang-up::after {
+  content: "";
+  position: absolute;
+
+  background-image: linear-gradient(#232227, #000);
+  filter: blur(32px);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+}
+a.hang-up:hover .headline {
+  text-decoration: underline;
+}
+
+a.hang-up {
+  width: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  padding: 100px 0;
+}
+
+a.hang-up .button {
+  background-color: #eeeeee;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+}
+
+a.hang-up .headline {
+  font-size: 2.75rem;
+  line-height: 1.09;
+  font-weight: 700;
+}
+a.hang-up .category {
+  position: relative;
+}
+a.hang-up .line {
+  position: absolute;
+  top: -10px;
+  background-color: #eeeeee;
+  height: 3px;
+  width: 7%;
+}
+
+section.this-week {
+  background-image: url(images/this-week-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.this-week .play-card {
+  position: relative;
+}
+section.this-week .play {
+  position: absolute;
+  bottom: 120px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px;
+}
+
+section.this-week .play svg {
+  fill: #3f3f42;
+  width: 24px;
+  height: 24px;
+}
+
+.slavery {
+  background-color: #fff;
+}
+.slavery .centered {
+  gap: 50px;
+}
+
+.slavery .icon {
+  width: 112px;
+  height: 112px;
+  object-fit: cover;
+}
+
+.slavery .icon-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.slavery .icon-box .text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.slavery .icons {
+  justify-content: space-between;
+}
+
+.slavery .icon-box:hover .text {
+  text-decoration: underline;
+  color: var(--sharp-blue);
+}
+
+.slavery .link {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+footer {
+  background-color: #282828;
+  color: #fff;
+  font-weight: 600;
+}
+
+footer .row.nav {
+  border-bottom: 1px solid;
+  padding: 20px 0;
+  border-color: #717171;
+}
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 1px solid;
+  border-color: #717171;
+  padding: 20px;
+  flex: 1 1 16%;
+}
+
+.footer-col .link:hover {
+  text-decoration: underline;
+}
+
+.footer-col:nth-of-type(1) {
+  border: none;
+  padding-left: 0;
+}
+
+footer .copyright {
+  font-weight: 400;
+}
+
+footer .copyright + a:hover {
+  text-decoration: underline;
+}
