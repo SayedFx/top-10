@@ -244,9 +244,14 @@ nav .items .small {
   --card-hover-text-decoration: underline;
 }
 
+.card .heading {
+  color: #3f3f42;
+}
+
 .heading.md {
   font-size: 18px;
   line-height: 22px;
+  color: #3f3f42;
 }
 
 .heading.md .live {
