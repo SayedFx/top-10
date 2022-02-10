@@ -342,3 +342,9 @@ section.coronavirus-cases {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+section.tv {
+  background-image: url("images/pink-colourful-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
