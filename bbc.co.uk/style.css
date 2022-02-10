@@ -292,3 +292,53 @@ section.sport {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+section.coronavirus-cases {
+  background-image: url("images/dark-blue-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.coronavirus-cases .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coronavirus-cases .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.coronavirus-cases .item .title {
+  line-height: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.coronavirus-cases .item .postcode {
+  border: none;
+  outline: none;
+  width: 170px;
+  height: 40px;
+  color: #006def;
+  font-size: 0.9rem;
+  line-height: 1.375;
+  background-color: #ffffff;
+  padding: 0 10px;
+}
+
+.coronavirus-cases .item .postcode:hover {
+  text-decoration: underline;
+}
+
+.coronavirus-cases .image {
+  background-image: url("images/coronavirus-background.jpg");
+  width: 411px;
+  height: 126px;
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
