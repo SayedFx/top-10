@@ -398,10 +398,122 @@ section.bbc-100 {
   text-decoration: underline;
 }
 
+.uk .card .play-square {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.uk .card .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+}
+
+.uk .card .square svg {
+  fill: #282828;
+  width: 24px;
+  height: 24px;
+}
+
+.tv .card .play-square {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tv .card .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+}
+
+.tv .card .square svg {
+  fill: #282828;
+  width: 24px;
+  height: 24px;
+}
+
 section.food {
   background-image: url("images/food-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.missed .card .play-square {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.missed .card .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-color: #fff;
+}
+
+.missed .card .square svg {
+  fill: #282828;
+  width: 24px;
+  height: 24px;
+}
+
+/*.missed .card .square .radio {*/
+/*fill: #282828;*/
+/*width: 24px;*/
+/*height: 24px;*/
+/*}*/
+
+.behind-headlines .card .play-square {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.behind-headlines .card .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  width: 114px;
+  height: 64px;
+  background-color: #fff;
+}
+
+.behind-headlines .card .square .play {
+  fill: #282828;
+  width: 24px;
+  height: 24px;
+}
+
+.behind-headlines .card .square .radio {
+  fill: #282828;
+  width: 24px;
+  height: 24px;
 }
 
 section.lottery {
@@ -459,4 +571,42 @@ section.lottery {
 
 .lottery .item .results:hover {
   text-decoration: underline;
+}
+
+section.winter-olympics {
+  background-image: url("images/ice-cube-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.winter-olympics .heading {
+  color: #fff;
+}
+
+.winter-olympics .card {
+  background-color: #282828;
+}
+
+.winter-olympics .card .play-square {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.winter-olympics .card .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -68px;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-color: #282828;
+}
+
+.winter-olympics .card .square svg {
+  fill: #fff;
+  width: 24px;
+  height: 24px;
 }
