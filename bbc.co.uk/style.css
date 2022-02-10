@@ -348,3 +348,52 @@ section.tv {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+section.bbc-100 {
+  background-image: url("images/black-background.jpg");
+}
+
+.bbc-100 .image {
+  background-image: url("images/rainbow-window.jpg");
+  width: 411px;
+  height: 126px;
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bbc-100 .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bbc-100 .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.bbc-100 .item .title {
+  line-height: 16px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.bbc-100 .item .archive {
+  font-weight: 400;
+  border: none;
+  outline: none;
+  width: 170px;
+  height: 40px;
+  color: #006def;
+  font-size: 1rem;
+  line-height: 1.375;
+  background-color: #ffffff;
+  padding: 0 10px;
+}
+
+.bbc-100 .item .archive:hover {
+  text-decoration: underline;
+}
