@@ -397,3 +397,9 @@ section.bbc-100 {
 .bbc-100 .item .archive:hover {
   text-decoration: underline;
 }
+
+section.food {
+  background-image: url("images/food-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
