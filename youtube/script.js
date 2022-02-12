@@ -10,6 +10,7 @@ const translateDelay = 500;
 const asideItemUncollapsables = document.querySelectorAll(
   ".aside-item.uncollapsable"
 );
+const hr = document.querySelector("hr");
 
 let isLeftGapExpanded = true;
 let leftGap = isLeftGapExpanded ? 240 : 72;
