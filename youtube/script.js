@@ -35,7 +35,12 @@ function toggleSide() {
   }
 
   aside.classList.toggle("not");
-  asideItemUncollapsable.classList.toggle("hidden");
+  asideItemUncollapsables.forEach((asideItemUncollapsable) => {
+    asideItemUncollapsable.classList.toggle("hidden");
+  });
+  //asideItemUncollapsables
+  //.forEach(asideItemUncollapsable)
+  //.classList.toggle("hidden");
 }
 
 function animateBurger() {
