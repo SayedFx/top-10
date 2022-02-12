@@ -59,7 +59,7 @@ nav .left {
   height: 40px;
   border-width: 1px;
 }
-.hamburger.clicked {
+.clicked {
   animation: flash 0.5s ease-in-out 0s 1;
 }
 
@@ -287,22 +287,25 @@ button.arrow svg {
 .content .row {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .video-item {
-  flex: 1 1 25%;
+  flex: 1 0 20%;
 
   display: flex;
   flex-direction: column;
+  gap: 10px;
   color: #fff;
   min-height: 305px;
+  max-width: 360px;
 }
 
 .video-item .title {
   display: flex;
   gap: 10px;
-  align-items: center;
   font-size: 13px;
+  position: relative;
 }
 
 .video-item .logo img {
@@ -322,4 +325,61 @@ button.arrow svg {
 .video-item .views {
   color: #aaa;
   margin-left: 46px;
+}
+
+.video-item .caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.video-item .caption > * {
+  margin: 0;
+}
+
+.video-item:hover .four-dots {
+  display: block !important;
+}
+
+.video-item .four-dots {
+  display: none;
+  position: absolute;
+  max-height: 40px;
+  max-width: 40px;
+  padding: 8px;
+  right: -20px;
+  top: -10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.four-dots .popup-menu {
+  display: none;
+  flex-direction: column;
+  padding: 10px 0;
+  gap: 10px;
+  position: absolute;
+  width: 254px;
+  background-color: var(--gray);
+}
+.four-dots .popup-menu.active {
+  display: flex;
+}
+
+.four-dots .popup-menu-item {
+  background-color: var(--gray);
+  padding: 5px 15px;
+  color: #fff;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 5;
+}
+.four-dots .popup-menu hr {
+  width: 100%;
+}
+.four-dots .popup-menu-item:hover {
+  background-color: var(--light-gray);
 }
