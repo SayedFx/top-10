@@ -7,7 +7,7 @@ const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 const translateDistance = 100;
 const translateDelay = 500;
-const asideItemUncollapsable = document.querySelector(
+const asideItemUncollapsables = document.querySelectorAll(
   ".aside-item.uncollapsable"
 );
 
@@ -35,6 +35,7 @@ function toggleSide() {
   }
 
   aside.classList.toggle("not");
+  asideItemUncollapsable.classList.toggle("hidden");
 }
 
 function animateBurger() {
