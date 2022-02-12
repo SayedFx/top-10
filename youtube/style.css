@@ -149,9 +149,8 @@ nav .right .avatar img {
   top: 86px;
   bottom: 0;
   width: var(--left-gap);
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
-  scrollbar-color: transparent transparent;
   scrollbar-width: thin;
   background-color: var(--gray);
 }
@@ -165,6 +164,92 @@ nav .right .avatar img {
   height: 40px;
 }
 
+.aside-item.hidden {
+  display: none;
+}
+
+.aside-item .label {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.aside-item.info {
+  pointer-events: none;
+  padding: 30px;
+}
+
+.aside-item.heading {
+  pointer-events: none;
+}
+
+.aside-item.footer {
+  padding-top: 80px;
+  padding-right: 50px;
+  pointer-events: none;
+}
+
+.aside-item.footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aside-item.footer .bottom .link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #717171;
+  padding-bottom: 20px;
+}
+
+.aside-item.footer a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 550;
+  text-decoration: none;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 117px;
+  height: 36px;
+  border: none;
+  border: 1px solid #3ea6ff;
+  background-color: transparent;
+  color: #3a97e7;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+}
+
+.btn svg {
+  fill: #3ea6ff;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.aside-item .title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.aside-item .round-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
 .expanded .aside-item {
   width: var(--left-gap);
 }
@@ -174,11 +259,17 @@ nav .right .avatar img {
   flex-direction: column;
   height: 74px;
   font-size: 10px;
-  gap: 5px;
+  gap: 3px;
   justify-content: center;
   align-items: center;
   padding-left: 28px;
-  padding-right: 20px;
+  padding-right: 35px;
+}
+
+.expanded.not .aside-item .label {
+  font-size: 10px;
+  letter-spacing: -0.3px;
+  line-height: 10px;
 }
 
 .aside-item:hover,

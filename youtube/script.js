@@ -8,6 +8,10 @@ const rightArrow = document.querySelector(".right-arrow");
 const fourDots = document.querySelectorAll(".four-dots");
 const translateDistance = 100;
 const translateDelay = 500;
+const asideItemUncollapsables = document.querySelectorAll(
+  ".aside-item.uncollapsable"
+);
+const hrs = document.querySelectorAll("hr");
 
 let isLeftGapExpanded = true;
 let leftGap = isLeftGapExpanded ? 240 : 72;
@@ -58,6 +62,14 @@ function toggleSide() {
   }
 
   aside.classList.toggle("not");
+
+  asideItemUncollapsables.forEach((asideItemUncollapsable) => {
+    asideItemUncollapsable.classList.toggle("hidden");
+
+    hrs.forEach((hr) => {
+      hr.style.display = "none";
+    });
+  });
 }
 
 function animateBurger() {
