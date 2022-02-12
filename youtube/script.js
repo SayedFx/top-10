@@ -8,9 +8,7 @@ const rightArrow = document.querySelector(".right-arrow");
 const fourDots = document.querySelectorAll(".four-dots");
 const translateDistance = 100;
 const translateDelay = 500;
-const asideItemUncollapsables = document.querySelectorAll(
-  ".aside-item.uncollapsable"
-);
+const asideItemUncollapsables = document.querySelectorAll(".uncollapsable");
 const hrs = document.querySelectorAll("hr");
 
 let isLeftGapExpanded = true;
@@ -65,10 +63,6 @@ function toggleSide() {
 
   asideItemUncollapsables.forEach((asideItemUncollapsable) => {
     asideItemUncollapsable.classList.toggle("hidden");
-
-    hrs.forEach((hr) => {
-      hr.style.display = "none";
-    });
   });
 }
 
@@ -111,22 +105,23 @@ function hasTagsMovedLeft() {
 }
 
 function setRightArrowVisibility() {
-  if (hasTagsMovedRight()) {
+  if (!canMoveLeft()) {
     rightArrow.style.display = "none";
   } else {
     rightArrow.style.display = "flex";
   }
 }
 
-function hasTagsMovedRight() {
-  return tags.getBoundingClientRect().left < -1 * leftGap;
-}
-
 function canMoveLeft() {
-  return tags.getBoundingClientRect().left > -1 * leftGap;
+  const lastIndex = tags.children.length - 1;
+  const lastTagRight = tags.children[lastIndex].getBoundingClientRect().right;
+  return lastTagRight > window.innerWidth;
 }
 
 function canMoveRight() {
+  const lastIndex = tags.children.length - 1;
+  console.log(tags.children[lastIndex].getBoundingClientRect());
+  console.log(window.innerWidth);
   return translate < 0;
 }
 
