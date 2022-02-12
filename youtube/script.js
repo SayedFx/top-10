@@ -7,6 +7,9 @@ const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 const translateDistance = 100;
 const translateDelay = 500;
+const asideItemUncollapsable = document.querySelector(
+  ".aside-item.uncollapsable"
+);
 
 let isLeftGapExpanded = true;
 let leftGap = isLeftGapExpanded ? 240 : 72;
