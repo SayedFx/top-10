@@ -5,6 +5,7 @@ const tags = document.querySelector(".tags");
 const tagBar = document.querySelector(".tag-bar");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
+const fourDots = document.querySelectorAll(".four-dots");
 const translateDistance = 100;
 const translateDelay = 500;
 const asideItemUncollapsables = document.querySelectorAll(
@@ -16,12 +17,37 @@ let isLeftGapExpanded = true;
 let leftGap = isLeftGapExpanded ? 240 : 72;
 let translate = 0;
 let clickX;
+let visibleFordotPopup;
 
 leftArrow.style.display = "none";
 
 hamburger.addEventListener("click", () => {
   animateBurger();
   toggleSide();
+});
+
+fourDots.forEach((fourDot) => {
+  fourDot.addEventListener(
+    "click",
+    () => {
+      fourDot.classList.add("clicked");
+      setTimeout(() => fourDot.classList.remove("clicked"), 500);
+      fourDot.querySelector(".popup-menu").classList.toggle("active");
+      setTimeout(() => {
+        visibleFordotPopup = fourDot;
+        visibleFordotPopup.style.display = "block";
+      }, 500);
+    },
+    true
+  );
+});
+
+document.addEventListener("click", (e) => {
+  if (visibleFordotPopup) {
+    visibleFordotPopup.style.display = "none";
+    visibleFordotPopup.querySelector(".popup-menu").classList.remove("active");
+    visibleFordotPopup = undefined;
+  }
 });
 
 function toggleSide() {
