@@ -10,7 +10,7 @@ const translateDelay = 500;
 const asideItemUncollapsables = document.querySelectorAll(
   ".aside-item.uncollapsable"
 );
-const hr = document.querySelector("hr");
+const hrs = document.querySelectorAll("hr");
 
 let isLeftGapExpanded = true;
 let leftGap = isLeftGapExpanded ? 240 : 72;
@@ -39,6 +39,10 @@ function toggleSide() {
 
   asideItemUncollapsables.forEach((asideItemUncollapsable) => {
     asideItemUncollapsable.classList.toggle("hidden");
+
+    hrs.forEach((hr) => {
+      hr.style.display = "none";
+    });
   });
 }
 
