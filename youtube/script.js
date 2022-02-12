@@ -10,6 +10,7 @@ const translateDelay = 500;
 const asideItemUncollapsables = document.querySelectorAll(
   ".aside-item.uncollapsable"
 );
+const asideItemFooter = document.querySelector(".aside-item.footer");
 
 let isLeftGapExpanded = true;
 let leftGap = isLeftGapExpanded ? 240 : 72;
@@ -35,12 +36,10 @@ function toggleSide() {
   }
 
   aside.classList.toggle("not");
+
   asideItemUncollapsables.forEach((asideItemUncollapsable) => {
     asideItemUncollapsable.classList.toggle("hidden");
   });
-  //asideItemUncollapsables
-  //.forEach(asideItemUncollapsable)
-  //.classList.toggle("hidden");
 }
 
 function animateBurger() {
