@@ -259,11 +259,17 @@ hr {
   flex-direction: column;
   height: 74px;
   font-size: 10px;
-  gap: 5px;
+  gap: 3px;
   justify-content: center;
   align-items: center;
   padding-left: 28px;
   padding-right: 35px;
+}
+
+.expanded.not .aside-item .label {
+  font-size: 10px;
+  letter-spacing: -0.3px;
+  line-height: 10px;
 }
 
 .aside-item:hover,
